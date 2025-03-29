@@ -8,20 +8,16 @@
 
 [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/release/python-370/) [![Nebius AI](https://img.shields.io/badge/Nebius%20AI-API-brightgreen)](https://cloud.nebius.ai/services/llm-embedding) [![OpenAI](https://img.shields.io/badge/OpenAI-API-lightgrey)](https://openai.com/) [![CSDN](https://img.shields.io/badge/CSDN-Blog-black?logo=csdn)](https://lizheng.blog.csdn.net/)
 
-本仓库采用清晰、实用的方法来实现**检索增强生成（RAG）**，将先进的技术分解为简单易懂的实现。这里不使用`LangChain`或`FAISS`等框架，而是使用熟悉的Python库如`openai`、`numpy`、`matplotlib`等。
+本仓库不使用`LangChain`或`FAISS`等框架，而是使用熟悉的Python库如`openai`、`numpy`、`matplotlib`等。采用清晰、实用的方法来实现**检索增强生成（RAG）**，将先进的技术分解为简单易懂的实现
 
 目标是提供可读、可修改且具有教育意义的代码。通过关注基础知识，本项目有助于揭开RAG的神秘面纱，使其更容易理解。
 
 
 ## 🚀 内容概览：从菜鸟到大神的进阶之路
 
-本仓库包含一系列Jupyter Notebook，每个笔记本专注于一种特定的RAG技术。每个笔记本提供：
 
-*   技术的简要说明。
 *   从零开始的逐步实现。
 *   带有内联注释的清晰代码示例。
-*   评估和比较以展示技术的有效性。
-*   可视化结果。
 
 
 
@@ -37,7 +33,7 @@
 
 *   **检索：**  为给定查询找到最相关的文本分块的过程。
 
-*   **生成：**  使用大型语言模型（LLM）根据检索到的上下文和用户查询创建响应。我们通过Nebius AI的API使用`meta-llama/Llama-3.2-3B-Instruct`模型。
+*   **生成：**  使用大型语言模型（LLM）根据检索到的上下文和用户查询创建响应。通过Nebius AI的API使用`meta-llama/Llama-3.2-3B-Instruct`模型。
 
 *   **评估：**  通过将RAG系统的响应与参考答案进行比较或使用LLM评分相关性来评估其质量。
 
